@@ -30,7 +30,7 @@ import { FaTelegram, FaInstagram } from 'react-icons/fa';
 // import { FaMoon } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 
-import logoMuslimKids from './assets/logo.jpg';
+import logoMuslimKids from './assets/photo_2025-04-23_15-25-23.jpg';
 import heart from './assets/heart.jpg';
 
 function App() {
@@ -46,22 +46,22 @@ function App() {
   //Ссылки на социальные сети и их логотипы
   const links = [
     {
-      url: 'https://youtube.com/@muslimmlife715?si=OYN05AbxxPqj3tTU',
+      url: 'https://youtube.com/@nyrlybilim?si=6IPLvSnLPKLVOfB1',
       icon: AiFillYoutube,
       text: 'YouTube',
     },
     {
-      url: 'https://www.tiktok.com/@muslimmlife715?_t=ZN-8viVYb87SGV&_r=1',
+      url: 'https://www.tiktok.com/@nyrlybillim?_t=ZM-8vm3spUbhjR&_r=1',
       icon: SiTiktok, // Исправленная иконка
       text: 'TikTok',
     },
     {
-      url: 'https://t.me/muslimmlife715',
+      url: 'https://t.me/+V0dMpeiNPg9lMDIy',
       icon: FaTelegram,
       text: 'Telegram',
     },
     {
-      url: 'https://www.instagram.com/muslimmlife715',
+      url: 'https://www.instagram.com/nyrlybilim?igsh=MWhxZXVpdXExd3A1Ng==',
       icon: FaInstagram,
       text: 'Instagram',
     },
@@ -85,7 +85,7 @@ function App() {
 
   //Название страницы
   const info = {
-    name: '@muslimmlife715',
+    name: '@NyrlyBilim',
   };
 
   // Настройка цвета страницы
@@ -266,7 +266,7 @@ function App() {
               <p
                 style={{ color: 'white', fontSize: '24px', fontWeight: 'bold' }}
               >
-                Каналы
+                Арналар
               </p>
               {links.map(link => (
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
