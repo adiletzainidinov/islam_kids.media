@@ -30,7 +30,6 @@ import { FaTelegram, FaInstagram } from 'react-icons/fa';
 // import { FaMoon } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 
-import logoMuslimKids from './assets/photo_2025-04-23_15-25-23.jpg';
 import heart from './assets/heart.jpg';
 
 function App() {
@@ -46,22 +45,22 @@ function App() {
   //Ссылки на социальные сети и их логотипы
   const links = [
     {
-      url: 'https://youtube.com/@nyrlybilim?si=6IPLvSnLPKLVOfB1',
+      url: 'https://youtube.com/channel/UCwweaXWIvr6QqRCKRV-PLeA?si=8mGhDSYx2S099stv',
       icon: AiFillYoutube,
       text: 'YouTube',
     },
     {
-      url: 'https://www.tiktok.com/@nyrlybillim?_t=ZM-8vm3spUbhjR&_r=1',
+      url: 'https://www.tiktok.com/@islam_kids.media?_t=ZN-8vyCVkA2EcR&_r=1',
       icon: SiTiktok, // Исправленная иконка
       text: 'TikTok',
     },
     {
-      url: 'https://t.me/+V0dMpeiNPg9lMDIy',
+      url: 'https://t.me/islamkids09',
       icon: FaTelegram,
       text: 'Telegram',
     },
     {
-      url: 'https://www.instagram.com/nyrlybilim?igsh=MWhxZXVpdXExd3A1Ng==',
+      url: 'https://www.instagram.com/islam_kids.media?igsh=MWt4OHBoNjE3ZzJ0ZQ%3D%3D&utm_source=qr',
       icon: FaInstagram,
       text: 'Instagram',
     },
@@ -85,7 +84,7 @@ function App() {
 
   //Название страницы
   const info = {
-    name: '@NyrlyBilim',
+    name: 'islam_kids.media',
   };
 
   // Настройка цвета страницы
@@ -151,7 +150,7 @@ function App() {
                 <SkeletonCircle size="6em" />
               ) : (
                 <Image
-                  src={logoMuslimKids}
+                  src={'https://i.pinimg.com/736x/0e/d9/b2/0ed9b249aabd6de9aada9e5f25eb2117.jpg'}
                   alt="Логотип канала muslimkids.media"
                   w="9em"
                   borderRadius="50%"
@@ -266,7 +265,7 @@ function App() {
               <p
                 style={{ color: 'white', fontSize: '24px', fontWeight: 'bold' }}
               >
-                Арналар
+                Каналы
               </p>
               {links.map(link => (
                 <a href={link.url} target="_blank" rel="noopener noreferrer">
