@@ -17,18 +17,19 @@ import { Link } from 'react-router-dom';
 
 //Подключение анимаций
 import { motion } from 'framer-motion';
+import avatar from './assets/islamkids.png'
 
 //Подключение иконок
 import {
   AiFillCheckCircle,
-  AiFillYoutube,
+  // AiFillYoutube,
   // AiFillDollarCircle,
 } from 'react-icons/ai';
 
 import { FaTelegram, FaInstagram } from 'react-icons/fa';
 // import { FiYoutube } from 'react-icons/fi';
 // import { FaMoon } from 'react-icons/fa';
-import { SiTiktok } from 'react-icons/si';
+// import { SiTiktok } from 'react-icons/si';
 
 import heart from './assets/heart.jpg';
 
@@ -44,23 +45,23 @@ function App() {
 
   //Ссылки на социальные сети и их логотипы
   const links = [
+    // {
+    //   url: 'https://youtube.com/channel/UCwweaXWIvr6QqRCKRV-PLeA?si=8mGhDSYx2S099stv',
+    //   icon: AiFillYoutube,
+    //   text: 'YouTube',
+    // },
+    // {
+    //   url: 'https://www.tiktok.com/@islam_kids.media?_t=ZN-8vyCVkA2EcR&_r=1',
+    //   icon: SiTiktok, // Исправленная иконка
+    //   text: 'TikTok',
+    // },
     {
-      url: 'https://youtube.com/channel/UCwweaXWIvr6QqRCKRV-PLeA?si=8mGhDSYx2S099stv',
-      icon: AiFillYoutube,
-      text: 'YouTube',
-    },
-    {
-      url: 'https://www.tiktok.com/@islam_kids.media?_t=ZN-8vyCVkA2EcR&_r=1',
-      icon: SiTiktok, // Исправленная иконка
-      text: 'TikTok',
-    },
-    {
-      url: 'https://t.me/islamkids09',
+      url: 'https://t.me/islamworldmedia',
       icon: FaTelegram,
       text: 'Telegram',
     },
     {
-      url: 'https://www.instagram.com/islam_kids.media?igsh=MWt4OHBoNjE3ZzJ0ZQ%3D%3D&utm_source=qr',
+      url: 'https://www.instagram.com/islam_world.media',
       icon: FaInstagram,
       text: 'Instagram',
     },
@@ -84,7 +85,7 @@ function App() {
 
   //Название страницы
   const info = {
-    name: 'islam_kids.media',
+    name: 'islam_world.media',
   };
 
   // Настройка цвета страницы
@@ -150,12 +151,12 @@ function App() {
                 <SkeletonCircle size="6em" />
               ) : (
                 <Image
-                  src={'https://i.pinimg.com/736x/0e/d9/b2/0ed9b249aabd6de9aada9e5f25eb2117.jpg'}
+                  src={avatar}
                   alt="Логотип канала muslimkids.media"
                   w="9em"
                   borderRadius="50%"
-                  border="3px solid white"
-                  boxShadow="0px 0px 30px rgba(0,0,0,0.5)"
+                  // border="3px solid white"
+                  // boxShadow="0px 0px 30px rgba(0,0,0,0.5)"
                   as={motion.img}
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
